@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alexander Supa | Portfolio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!-- GALLERY MODAL -->
+<div id="gallery" class="gallery">
+    <button class="close" onclick="closeGallery()">✕</button>
+    <img id="gallery-img" alt="Project screenshot">
+    <button class="prev" onclick="changeImage(-1)">&#8249;</button>
+    <button class="next" onclick="changeImage(1)">&#8250;</button>
+</div>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar">
+            <a href="#inicio" class="nav-logo"></a>
+            <ul id="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre">Acerca de mí</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema" title="Cambiar tema">🌙</button>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="inicio">
+        <div class="hero-inner">
+            <div class="hero-text">
+                <div class="hero-tag"><span></span> Disponible para trabajar</div>
+                <h1>Hola, soy<br><span class="accent">Alexander Supa</span></h1>
+                <p>Estudiante de Ingeniería de Sistemas apasionado por el desarrollo web fullstack y la creación de
+                    soluciones tecnológicas.</p>
+                <div class="social">
+                    <a href="https://github.com/Alex160102" target="_blank" class="social-btn">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/alexandersupa/" target="_blank" class="social-btn">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg">
+                        <span>Linkedin</span>
+                    </a>
+                    <a href="cv/AlexanderSupaCV.pdf" target="_blank" download class="social-btn">
+                        <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png">
+                        <span>CV</span>
+                    </a>
+                </div>
+            </div>
+            <img src="img/yo_animado.png" class="hero-avatar" alt="Alexander Supa">
+        </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre">
+        <div class="section-inner">
+            <p class="section-label">Sobre mí</p>
+            <h2 class="section-title">¿Quién soy?</h2>
+            <div class="sobre-grid">
+                <div class="sobre-text">
+                    <p>Soy estudiante de Ingeniería de Sistemas con enfoque en el desarrollo de software y tecnologías
+                        de la información. Durante mi carrera he adquirido conocimientos sólidos en programación,
+                        desarrollo web, bases de datos y análisis de sistemas.</p>
+                    <p>Me encuentro en constante aprendizaje y busco seguir fortaleciendo mis habilidades en desarrollo
+                        backend y frontend, con el objetivo de desempeñarme profesionalmente como desarrollador
+                        Fullstack en el sector tecnológico.</p>
+                    <p>Me interesa participar en proyectos que me permitan aplicar mis conocimientos, adquirir
+                        experiencia práctica y seguir creciendo dentro del mundo del desarrollo de software.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="skills">
+        <div class="section-inner">
+            <p class="section-label">Tecnologías</p>
+            <h2 class="section-title">Mis Habilidades</h2>
+
+            <div class="skill-category">
+                <h3>Frontend</h3>
+                <div class="skills-grid">
+                    <div class="skill-item"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"><span>HTML5</span>
+                    </div>
+                    <div class="skill-item"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"><span>CSS3</span>
+                    </div>
+                    <div class="skill-item"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"><span>JavaScript</span>
+                    </div>
+                    <div class="skill-item"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"><span>Bootstrap</span>
+                    </div>
+                    <div class="skill-item"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"><span>Vue.js</span>
+                    </div>
+                    <div class="skill-item"><img
+                            src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"><span>Tailwind
+                            CSS</span></div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Backend</h3>
+                <div class="skills-grid">
+                    <div class="skill-item"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"><span>Java</span>
+                    </div>
+                    <div class="skill-item"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"><span>PHP</span>
+                    </div>
+                    <div class="skill-item"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"><span>Spring
+                            Boot</span></div>
+                    <div class="skill-item"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"><span>Python</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Herramientas y Bases de Datos</h3>
+                <div class="skills-grid">
+                    <div class="skill-item"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"><span>Git</span>
+                    </div>
+                    <div class="skill-item"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"><span>GitHub</span>
+                    </div>
+                    <div class="skill-item"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg"><span>GitLab</span>
+                    </div>
+                    <div class="skill-item"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"><span>MySQL</span>
+                    </div>
+                    <div class="skill-item"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"><span>PostgreSQL</span>
+                    </div>
+                    <div class="skill-item"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"><span>SQL
+                            Server</span></div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Videojuegos / 3D</h3>
+                <div class="skills-grid">
+                    <div class="skill-item"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg"><span>Unity</span>
+                    </div>
+                    <div class="skill-item"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg"><span>Blender</span>
+                    </div>
+                    <div class="skill-item"><img src="img/cinema.jpg" style="border-radius:4px"><span>Cinema 4D</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos">
+        <div class="section-inner">
+            <p class="section-label">Trabajos</p>
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <div class="proyectos-grid">
+
+                <div class="project-card">
+                    <div class="project-image" onclick="openGallery(0)">
+                        <img src="img/proyecto1-1.png" alt="Sistema Botica">
+                        <img src="img/proyecto1-2.png" alt="Sistema Botica">
+                        <img src="img/proyecto1-3.png" alt="Sistema Botica">
+                        <div class="project-overlay">
+                            <div class="project-overlay-icon">⊕</div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Sistema Botica</h3>
+                        <p>Sistema web para gestión de productos e inventario de una botica, con control de stock y
+                            reportes.</p>
+                        <div class="project-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" onclick="openGallery(1)">
+                        <img src="img/proyecto2-1.png" alt="Sistema Mecánica">
+                        <img src="img/proyecto2-2.png" alt="Sistema Mecánica">
+                        <img src="img/proyecto2-3.png" alt="Sistema Mecánica">
+                        <div class="project-overlay">
+                            <div class="project-overlay-icon">⊕</div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Sistema Mecánica</h3>
+                        <p>Sistema web para gestión de almacén, clientes y ventas en un taller mecánico.</p>
+                        <div class="project-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+        <div class="section-inner">
+            <p class="section-label">Contacto</p>
+            <h2 class="section-title">Hablemos</h2>
+            <div class="contacto-grid">
+                <div class="contacto-info">
+                    <h3>¿Tienes un proyecto en mente?</h3>
+                    <p>Estoy disponible para colaborar en proyectos, prácticas o cualquier oportunidad profesional. No
+                        dudes en escribirme.</p>
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon">📍</div>
+                        <span>Lima, Perú</span>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                                style="width:18px">
+                        </div>
+                        <span>linkedin.com/in/alexandersupa</span>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                style="width:18px">
+                        </div>
+                        <span>github.com/Alex160102</span>
+                    </div>
+                </div>
+                <form id="contact-form" action="https://formspree.io/f/mpqyqbyb" method="POST" class="contact-form"
+                    autocomplete="off">
+                    <div class="form-group">
+                        <label>Asunto</label>
+                        <input type="text" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Correo electrónico</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Mensaje</label>
+                        <textarea name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Enviar mensaje →</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© <span id="year"></span> Alexander Supa Usurin. Todos los derechos reservados.</p>
+        <a href="#inicio" class="btn-up" title="Volver arriba">↑</a>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
